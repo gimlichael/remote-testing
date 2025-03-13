@@ -18,7 +18,7 @@ For this reason, consider adding a `testenvironments.json` to the root of your r
         {
             "name": "Docker-Ubuntu",
             "type": "docker",
-            "dockerImage": "gimlichael/ubuntu-testrunner:net6.0.420-net7.0.407-net8.0.203"
+            "dockerImage": "gimlichael/ubuntu-testrunner:net8.0.407-9.0.201"
         }
     ]
 }
