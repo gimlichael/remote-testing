@@ -13,12 +13,12 @@ For this reason, consider adding a `testenvironments.json` to the root of your r
         {
             "name": "WSL-Ubuntu",
             "type": "wsl",
-            "wslDistribution": "Ubuntu-22.04"
+            "wslDistribution": "Ubuntu-24.04"
         },
         {
             "name": "Docker-Ubuntu",
             "type": "docker",
-            "dockerImage": "gimlichael/ubuntu-testrunner:net8.0.407-9.0.201"
+            "dockerImage": "gimlichael/ubuntu-testrunner:net8.0.407-9.0.202"
         }
     ]
 }
