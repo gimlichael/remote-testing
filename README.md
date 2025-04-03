@@ -6,6 +6,8 @@ Since all code starts out locally, it is nice to verify tests manually before pu
 
 For this reason, consider adding a `testenvironments.json` to the root of your repository and add this snippet to it:
 
+## .NET 8.0.407 and 9.0.202
+
 ```json
 {
     "version": "1",
@@ -19,6 +21,26 @@ For this reason, consider adding a `testenvironments.json` to the root of your r
             "name": "Docker-Ubuntu",
             "type": "docker",
             "dockerImage": "gimlichael/ubuntu-testrunner:net8.0.407-9.0.202"
+        }
+    ]
+}
+```
+
+## Mono, .NET 8.0.407 and 9.0.202
+
+```json
+{
+    "version": "1",
+    "environments": [
+        {
+            "name": "WSL-Ubuntu",
+            "type": "wsl",
+            "wslDistribution": "Ubuntu-24.04"
+        },
+        {
+            "name": "Docker-Ubuntu",
+            "type": "docker",
+            "dockerImage": "gimlichael/ubuntu-testrunner:mono-net8.0.407-9.0.202"
         }
     ]
 }
